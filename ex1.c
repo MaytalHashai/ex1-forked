@@ -12,7 +12,7 @@ int main() {
   printf("What bit:\n");
   /*Scan two integers (representing number and a position)
 Print the bit in this position. */
-  int num1, position1; //
+  int num1, position1;
   printf("Please enter a number:\n");
   scanf("%d", &num1);
   printf("Please enter a position:\n");
