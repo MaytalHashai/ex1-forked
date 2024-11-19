@@ -17,6 +17,7 @@ Print the bit in this position. */
   scanf("%d", &num1);
   printf("Please enter a position:\n");
   scanf("%d", &position1);
+  // res saves the bit that is in position1
   int res = (num1 >> position1) & 1;
   printf("The bit in position %d of number %d is: %d\n\n", position1, num1, res);
 
@@ -31,8 +32,10 @@ Print the bit in this position. */
   scanf("%d", &num2);
   printf("Please enter a position:\n");
   scanf("%d", &position2);
+  // if the num2 in position2 is 0 bitOn changes it to 1. if the gaven num2 in position2 is 1 it just stays on
   int bitOn = ((num2 >> position2) | 1) << position2;
   bitOn = num2 | bitOn;
+  //
   int bitOff = (~(1 << position2)) & num2;
   printf("Number with bit %d set to 1: %d\n", position2, bitOn);
   printf("Number with bit %d set to 0: %d\n\n", position2, bitOff);
@@ -47,6 +50,7 @@ Print the bit in this position. */
   scanf("%d", &num3);
   printf("Please enter a position:\n");
   scanf("%d", &position3);
+
   int toggle = (1 << position3) ^ num3;
   printf("Number with bit %d toggled: %d\n\n", position3, toggle);
 
