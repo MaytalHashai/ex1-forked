@@ -50,6 +50,7 @@ Print the bit in this position. */
   scanf("%d", &num3);
   printf("Please enter a position:\n");
   scanf("%d", &position3);
+  // toggle changes the bit in position3. if in position3 in the given
   int toggle = (1 << position3) ^ num3;
   printf("Number with bit %d toggled: %d\n\n", position3, toggle);
 
